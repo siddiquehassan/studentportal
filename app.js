@@ -4,7 +4,6 @@ document.getElementById('login-form').addEventListener('submit', function(event)
   const email = document.getElementById('loginEmail').value;
   const password = document.getElementById('loginPassword').value;
 
-  // Sample logic for determining user type (Admin or Student)
   if (email === '123@' && password === '456') {
       document.getElementById('login-section').style.display = 'none';
       document.getElementById('admin-section').style.display = 'block';
@@ -14,7 +13,7 @@ document.getElementById('login-form').addEventListener('submit', function(event)
   }
 });
 
-// Add event listener to Add Student form
+
 document.getElementById('add-student-form').addEventListener('submit', function(event) {
   event.preventDefault();
   const firstName = document.getElementById('firstName').value;
@@ -28,7 +27,6 @@ document.getElementById('add-student-form').addEventListener('submit', function(
   alert("Student added successfully!");
 });
 
-// Add event listener to Upload Marks form
 document.getElementById('upload-marks-form').addEventListener('submit', function(event) {
   event.preventDefault();
   const course = document.getElementById('course').value;
@@ -41,7 +39,7 @@ document.getElementById('upload-marks-form').addEventListener('submit', function
   alert("Marks uploaded successfully!");
 });
 
-// Edit Profile functionality
+
 document.getElementById('edit-profile-form').addEventListener('submit', function(event) {
   event.preventDefault();
   const firstName = document.getElementById('editFirstName').value;
@@ -52,12 +50,11 @@ document.getElementById('edit-profile-form').addEventListener('submit', function
   alert("Profile updated successfully!");
 });
 
-// View Result functionality
 document.getElementById('view-result-form').addEventListener('submit', function(event) {
   event.preventDefault();
   const cnic = document.getElementById('searchCnic').value;
 
-  // Sample logic for displaying result
+  
   document.getElementById('result-display').style.display = 'block';
   document.getElementById('resultText').innerText = `Results for CNIC: ${cnic} - Marks: 85/100, Grade: A`;
 });
